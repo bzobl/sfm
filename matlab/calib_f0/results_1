@@ -1,0 +1,54 @@
+brightness (int)    : min=0 max=255 step=1 default=128 value=128
+contrast (int)    : min=0 max=255 step=1 default=128 value=128
+saturation (int)    : min=0 max=255 step=1 default=128 value=128
+white_balance_temperature_auto (bool)   : default=1 value=1
+gain (int)    : min=0 max=255 step=1 default=0 value=193
+power_line_frequency (menu)   : min=0 max=2 default=2 value=1
+                                0: Disabled
+                                1: 50 Hz
+                                2: 60 Hz
+white_balance_temperature (int)    : min=2000 max=6500 step=1 default=4000 value=4454
+sharpness (int)    : min=0 max=255 step=1 default=128 value=128
+backlight_compensation (int)    : min=0 max=1 step=1 default=0 value=0
+exposure_auto (menu)   : min=0 max=3 default=3 value=3
+                          1: Manual Mode
+                          3: Aperture Priority Mode
+exposure_absolute (int)    : min=3 max=2047 step=1 default=250 value=500
+exposure_auto_priority (bool)   : default=0 value=1
+pan_absolute (int)    : min=-36000 max=36000 step=3600 default=0 value=0
+tilt_absolute (int)    : min=-36000 max=36000 step=3600 default=0 value=0
+focus_absolute (int)    : min=0 max=250 step=5 default=0 value=0
+focus_auto (bool)   : default=1 value=0
+zoom_absolute (int)    : min=100 max=500 step=1 default=100 value=100
+
+
+
+Calibration results after optimization (with uncertainties):
+
+Focal Length:          fc = [ 922.32840   919.86291 ] � [ 2.76969   2.81222 ]
+Principal point:       cc = [ 630.86009   354.02373 ] � [ 5.61537   4.20855 ]
+Skew:             alpha_c = [ 0.00000 ] � [ 0.00000  ]   => angle of pixel axes = 90.00000 � 0.00000 degrees
+Distortion:            kc = [ 0.10309   -0.18831   -0.00004   -0.00276  0.00000 ] � [ 0.01071   0.03296   0.00173   0.00254  0.00000 ]
+Pixel error:          err = [ 0.53589   0.43693 ]
+
+
+--- recomp. corners
+
+Calibration results after optimization (with uncertainties):
+
+Focal Length:          fc = [ 922.40310   920.20585 ] � [ 2.22594   2.26194 ]
+Principal point:       cc = [ 630.90041   354.28193 ] � [ 4.47352   3.38314 ]
+Skew:             alpha_c = [ 0.00000 ] � [ 0.00000  ]   => angle of pixel axes = 90.00000 � 0.00000 degrees
+Distortion:            kc = [ 0.10511   -0.19831   0.00013   -0.00178  0.00000 ] � [ 0.00865   0.02674   0.00139   0.00202  0.00000 ]
+Pixel error:          err = [ 0.35411   0.42835 ]
+
+
+--- removing img 6 & recomp corners
+
+Calibration results after optimization (with uncertainties):
+
+Focal Length:          fc = [ 921.86478   919.67191 ] � [ 2.30570   2.32980 ]
+Principal point:       cc = [ 630.80621   353.57979 ] � [ 4.42471   3.41973 ]
+Skew:             alpha_c = [ 0.00000 ] � [ 0.00000  ]   => angle of pixel axes = 90.00000 � 0.00000 degrees
+Distortion:            kc = [ 0.10663   -0.19973   -0.00025   -0.00195  0.00000 ] � [ 0.00869   0.02638   0.00144   0.00203  0.00000 ]
+Pixel error:          err = [ 0.35955   0.40631 ]
