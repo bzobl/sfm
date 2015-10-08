@@ -36,12 +36,14 @@ a NVIDIA graphics card and the CUDA toolbox is needed to build the application. 
 </ul>
 </p>
 
+<p>
 Consider adding the self compiled libraries to your library search path, or use
 ```
 export LD_LIBRARY_PATH=/opt/opencv3/lib/:/opt/pcl/lib:/opt/cuda-6.5/lib64
 ```
 so the application can find the necessary libraries.
-
+</p>
+<p>
 Running the application with
 ```
 ./sfm --help
@@ -49,3 +51,8 @@ Running the application with
 gives a list of options implemented. You might want to try the <i>-c 1</i> switch if you are using a laptop with integrated webcam
 to tell the application to use the external camera. Using the <i>-l</i> switch opens the live stream in which the matches can
 be shown using the [n] key, when the window is in focus. The [q] key exits.
+</p>
+<p>
+Don't forget to run the camera.sh script before running the application. The script sets the camera's properties, especially it disables the auto focus which would change the calibration parameters. The script can be called
+using the camera number as parameter (./camera.sh -c 1).
+</p>
